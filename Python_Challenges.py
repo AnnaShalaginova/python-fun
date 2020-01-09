@@ -1,4 +1,5 @@
 # program to create all possible permutations from a given collection of distinct numbers.
+# Source: https://www.w3resource.com/python-exercises/basic/python-basic-1-exercise-12.php
 def permute(nums):
   result_perms = [[]]
   for n in nums:
