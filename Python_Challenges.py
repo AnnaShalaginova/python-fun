@@ -28,3 +28,12 @@ if number % 2 == 0:
   print(f"\nThe number (number) is even.")
 else:
   print(f"\nThe number {number} is odd.")
+
+#While loop: letting the user choose when to quit 
+# parrot.py
+prompt = "\nTell me something, and I will repeat it back to you:"
+ prompt += "\nEnter 'quit' to end the program."
+message = ""
+while message != 'quit':
+  message = input(prompt)
+  print(message)
