@@ -37,3 +37,15 @@ message = ""
 while message != 'quit':
   message = input(prompt)
   print(message)
+  
+  #Adding a FLAG to the program: - when many conditions are involved - having an active state of the system
+  prompt = "\nTell me something, and I will repeat it back to you:"
+prompt += "n\Enter 'quit' to end the program. "
+active = True
+while active: 
+    message = input(prompt)
+    
+    if message == 'quit':
+        active = False
+    else: 
+        print(message)
