@@ -115,3 +115,10 @@ while polling_active:
     print("\n--- Poll Results ---")
     for name, response in responses.items():
         print(f"{name} would like to climb {response}.")
+
+#Providing a default value for a parameter 
+def describe_pet(pet_name, animal_type = 'dog'):
+    """Display Information About a Pet"""
+    print(f"\nI have a {animal_type}.")
+    print(f"My {animal_type}'s name is {pet_name.title()}.")
+describe_pet(pet_name='willie')
