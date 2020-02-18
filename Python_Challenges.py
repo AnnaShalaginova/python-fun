@@ -146,3 +146,30 @@ print(musician)
 musician = get_formatted_name('john', 'hooker', 'lee')
 print(musician)
 
+#Passing objects such as dictionaries to a list
+def greet_users(names):
+    """Print a simple greeting to each user in the list."""
+    for name in names:
+        msg = f"Hello, {name.title()}!"
+        print(msg)
+usernames = ['hannah', 'ty', 'margot']
+greet_users(usernames)
+
+#Modifying a list in a function
+#print_models.py
+#Start with some designs thaet need to be printed
+unprinted_designs = ['phone case', 'robot pendant', 'dodecahedron']
+completed_models = []
+
+#Similate printing each design, until none are left
+#Move each design to completed_models after printing
+while unprinted_designs: 
+    current_design = unprinted_designs.pop()
+    print(f"Printing model: {current_design}")
+    completed_models.append(current_design)
+
+# Display all completed models 
+print("\nThe following models have been printed:")
+for completed_model in completed_models: 
+    print(completed_model)
+
